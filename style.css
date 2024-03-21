@@ -1,0 +1,80 @@
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 50%;
+  background-image: linear-gradient(to bottom, #615dad, #ffc8da);
+  margin-top: 100px;
+}
+
+.container {
+  border: #283e50;
+  background-color: #283e50;
+  width: 400px;
+  height: 230px;
+}
+
+.img {
+  width: 400px;
+  height: 300px;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Lobster;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: white;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+}
+
+.button {
+  border: #1fcca4;
+  background-color: #1fcca4;
+  justify-content: center;
+}
+
+.cta {
+  border: #0197f6;
+  background-color: #0197f6;
+  justify-content: center;
+}
+
+.button,
+.cta {
+  margin: 0;
+  padding: 15px;
+  width: 400px;
+  height: 50px;
+}
+
+.button:hover {
+  background-color: #1cbb96
+}
+
+.cta:hover {
+  background-color: #0090e9;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
