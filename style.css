@@ -86,7 +86,7 @@ a {
 /* CSS HRA.HTML */
 
 .body-game {
-  min-height: auto;
+  /*min-height: auto;*/
   max-width: 80vmin;
   margin: auto;
   padding-bottom: 15px;
@@ -96,19 +96,14 @@ a {
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   padding-bottom: 10px;
-  position: relative;
-  width: 100%;
-  margin-top: 15px;
 }
 
 .menu--left {
   display: flex;
   align-items: center;
-  position: absolute;
-  left: 0;
-  bottom: 0;
 }
 
 .menu--left__plays {
@@ -118,9 +113,6 @@ a {
 .icon-container {
   display: flex;
   align-items: center;
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 .game__box {
