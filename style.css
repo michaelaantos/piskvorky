@@ -13,8 +13,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 50%;
   background-image: linear-gradient(to bottom, #615dad, #ffc8da);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -85,12 +86,15 @@ a {
 
 /* CSS HRA.HTML */
 
+
 .body-game {
   /*min-height: auto;*/
   max-width: 80vmin;
   margin: auto;
   padding-bottom: 15px;
   box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .menu {
