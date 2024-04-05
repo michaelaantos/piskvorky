@@ -11,6 +11,7 @@
 body {
   background-image: linear-gradient(to bottom, #615dad, #ffc8da);
   background-size: cover;
+  height: 100vh;
 }
 
 .body {
