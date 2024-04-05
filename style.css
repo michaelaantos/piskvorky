@@ -9,13 +9,16 @@
 }
 
 body {
+  background-image: linear-gradient(to bottom, #615dad, #ffc8da);
+  background-size: cover;
+}
+
+.body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, #615dad, #ffc8da);
-  background-size: cover;
-  background-repeat: no-repeat;
+
 }
 
 .container {
