@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="hra.js"></script>
   </head>
   <body>
     <div class="body-game">
@@ -18,14 +19,19 @@
       <div class="menu">
         <div class="menu--left">
           <p class="menu--left__plays"><strong>hraje:</strong></p>
-          <img class="img--circle" src="circle.svg" alt="circle" />
+          <img
+            class="img--circle"
+            id="current-player"
+            src="pictures/circle.svg"
+            alt="circle"
+          />
         </div>
         <div class="icon-container">
           <a href="index.html"
-            ><img class="img--home" src="home.svg" alt="home"
+            ><img class="img--home" src="pictures/home.svg" alt="home"
           /></a>
           <a href="hra.html"
-            ><img class="img--restart" src="restart.svg" alt="restart"
+            ><img class="img--restart" src="pictures/restart.svg" alt="restart"
           /></a>
         </div>
       </div>

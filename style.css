@@ -11,7 +11,8 @@
 body {
   background-image: linear-gradient(to bottom, #615dad, #ffc8da);
   background-size: cover;
-  height: 100vh;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 .body {
@@ -92,7 +93,7 @@ a {
 
 
 .body-game {
-  /*min-height: auto;*/
+  height: 100%;
   max-width: 80vmin;
   margin: auto;
   padding-bottom: 15px;
@@ -161,4 +162,18 @@ a {
   opacity: 0.8;
   padding: 5px;
   margin-left: 5px;
+}
+
+.board__field--circle {
+  background-image: url(pictures/circle_black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+}
+
+.board__field--cross {
+  background-image: url(pictures/cross_black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
 }
