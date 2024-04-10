@@ -5,12 +5,12 @@ const selectbutton = (evt) => {
   evt.target.disabled = true;
   if (currentPlayer === 'circle') {
     btn.classList.add('board__field--circle');
-    document.querySelector('#current-player').src = 'pictures/circle.svg';
     currentPlayer = 'cross';
+    document.querySelector('#current-player').src = 'pictures/circle.svg';
   } else {
     btn.classList.add('board__field--cross');
-    document.querySelector('#current-player').src = 'pictures/cross.svg';
     currentPlayer = 'circle';
+    document.querySelector('#current-player').src = 'pictures/cross.svg';
   }
 };
 
