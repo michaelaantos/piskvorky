@@ -138,7 +138,7 @@ a {
 .game__box--square {
   flex-basis: 10%;
   border: 2px solid black;
-  opacity: 0.5;
+  background-color: rgba;
   cursor: pointer;
   aspect-ratio: 1/1;
 }
@@ -173,6 +173,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 75%;
+  animation: zoomIn 0.15s;
 }
 
 .board__field--cross {
@@ -180,4 +181,15 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 75%;
+  animation: zoomIn 0.15s;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

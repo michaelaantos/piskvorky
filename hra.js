@@ -6,11 +6,11 @@ const selectbutton = (evt) => {
   if (currentPlayer === 'circle') {
     btn.classList.add('board__field--circle');
     currentPlayer = 'cross';
-    document.querySelector('#current-player').src = 'pictures/circle.svg';
+    document.querySelector('#current-player').src = 'pictures/cross.svg';
   } else {
     btn.classList.add('board__field--cross');
     currentPlayer = 'circle';
-    document.querySelector('#current-player').src = 'pictures/cross.svg';
+    document.querySelector('#current-player').src = 'pictures/circle.svg';
   }
 };
 
