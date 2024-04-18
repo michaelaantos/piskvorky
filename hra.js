@@ -1,3 +1,5 @@
+import { findWinner } from 'https://unpkg.com/piskvorky@0.1.4';
+
 let currentPlayer = 'circle';
 
 const selectbutton = (evt) => {
@@ -14,33 +16,24 @@ const selectbutton = (evt) => {
   }
 };
 
-document
-  .querySelector('button:nth-child(1)')
-  .addEventListener('click', selectbutton);
-document
-  .querySelector('button:nth-child(2)')
-  .addEventListener('click', selectbutton);
-document
-  .querySelector('button:nth-child(3)')
-  .addEventListener('click', selectbutton);
-document
-  .querySelector('button:nth-child(4)')
-  .addEventListener('click', selectbutton);
-document
-  .querySelector('button:nth-child(5)')
-  .addEventListener('click', selectbutton);
-document
-  .querySelector('button:nth-child(6)')
-  .addEventListener('click', selectbutton);
-document
-  .querySelector('button:nth-child(7)')
-  .addEventListener('click', selectbutton);
-document
-  .querySelector('button:nth-child(8)')
-  .addEventListener('click', selectbutton);
-document
-  .querySelector('button:nth-child(9)')
-  .addEventListener('click', selectbutton);
-document
-  .querySelector('button:nth-child(10)')
-  .addEventListener('click', selectbutton);
+const selectAll = document.querySelectorAll('.game__box--square');
+selectAll.forEach((button) => {
+  button.addEventListener('click', selectbutton);
+});
+
+const changeElm = (htmlButton) => {
+  if (htmlButton.classList.contains('board__field--cross')) {
+    return `x`;
+  } else if (htmlButton.classList.contains('board__field--circle')) {
+    return `o`;
+  } else {
+    return `_`;
+  }
+};
+
+const herniPole = [...selectAll].map(changeElm);
+
+/*const vitez = findWinner(herniPole);
+if (vitez === 'o' || vitez === 'x') {
+  alert(`Vyhrál hráč se symbolem ${vitez}.`);
+}*/
