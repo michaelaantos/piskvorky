@@ -14,6 +14,7 @@ const selectbutton = (evt) => {
     currentPlayer = 'circle';
     document.querySelector('#current-player').src = 'pictures/circle.svg';
   }
+  checkGameStatus();
 };
 
 const selectAll = document.querySelectorAll('.game__box--square');
@@ -31,9 +32,21 @@ const changeElm = (htmlButton) => {
   }
 };
 
-const herniPole = [...selectAll].map(changeElm);
+const checkGameStatus = () => {
+  const herniPole = [...selectAll].map(changeElm);
+  const vitez = findWinner(herniPole);
 
-/*const vitez = findWinner(herniPole);
-if (vitez === 'o' || vitez === 'x') {
-  alert(`Vyhrál hráč se symbolem ${vitez}.`);
-}*/
+  if (vitez === 'o' || vitez === 'x') {
+    setTimeout(() => {
+      console.log('funguje');
+      alert(`Vyhrál hráč se symbolem ${vitez}.`);
+
+      location.reload();
+    }, 1000);
+  } else if (vitez === 'tie') {
+    setTimeout(() => {
+      alert('Hra skončila remízou');
+      location.reload();
+    }, 1000);
+  }
+};
